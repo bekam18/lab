@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My First Webpage</title>
+
+
+ <style>
+  html{
+      background-color: rgb(212, 187, 187);
+  }
+  nav ul{
+     padding: 0;
+     margin: 0;
+      
+  }
+  ul{
+  
+  
+
+  }
+  ul li{
+      display: inline;
+      padding: 50px;
+     
+      
+  }
+  li :hover{
+      cursor: pointer;
+      text-decoration:overline;
+      color: blue;
+      
+     
+  }
+  h1,h2,h3{
+      color: blueviolet;
+      font-style: italic;
+      size: 20%;
+  
+
+  }
+  p{
+      padding-left: 121px;
+  }
+  table{
+      padding-left: 50px;
+      padding-top: 50px;
+       
+      color: black;
+  }
+  table th ,td {
+      
+      border-collapse: collapse;
+      border: 1px solid black;
+      padding: 0;
+      margin: 0;
+      
+  }
+
+  table th ,td{
+      padding-left: 50px;
+      padding-right: 9px;
+
+  }
+  hr{
+    color: rgb(9, 154, 79);
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">ABOUT</a></li>
+   
+    <li><a href="">CONTACT</a></li>
+</ul>
+
+<!-------heading and paragraphs---------->
+
+
+
+  <h3>HTML heading and paragraphs </h3>
+  <hr>
+  <p>A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the webpage</p>
+  
+
+    
+  <h1>This is main heading of page. </h1>  
+  <p>h1 is the most important heading, which is used to display the keyword of page </p>  
+ <h2>This is first sub-heading</h2>  
+  <p>h2 describes the first sub heading of page. </p>  
+ <h3>This is Second sub-heading</h3>  
+  <p>h3 describes the second sub heading of page.</p>  
+  <p>We can use h1 to h6 tag to use the different sub-heading with their paragraphs if         
+                 required.   
+            </p>
+            <hr>
+
+<!-----html table-------->
+
+
+
+   <h3>html table</h3> 
+   <p>HTML <del>table</del> tag is used to display data in tabular form (row * column). There can be many columns in a row.
+
+    We can create a table to display data in tabular form, using <table> element, with the help of tr, td and th tag elements.</p>
+<table border="1" style="border-collapse: collapse;">
+    <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>sex</th>
+        <th>id no</th>
+        <th>dept</th>
+    </tr>
+    <tr>
+        <td>chela </td>
+        <td>22</td>
+        <td>M</td>
+        <td>1000</td>
+        <td>cs</td>
+    </tr>
+    <tr>
+        <td>tulu</td>
+        <td>21</td>
+        <td>M</td>
+        <td>1001</td>
+        <td>IT</td>
+    </tr>
+    <tr>
+      <td>nafi</td>
+      <td>20</td>
+      <td>F</td>
+      <td>1002</td>
+      <td>Is</td>
+  </tr>
+</table>
+<hr>
+<!------html image------->
+<h3>HTML image</h3>
+<p> <mark>HTML img tag is used to display image on the web page</mark> . HTML img tag is an empty tag that contains attributes only, closing tags are not used in HTML image element.</p>
+<img src="html-logo.png" alt=" html-logo" width="300px" height="250px">
+<hr>
+
+<!-----html form---------->
+<h3><u>html form</u> </h3>
+<p>The (form) tag defines a form within an HTML document, enclosing form 
+controls for user input.</p>
+
+	<!--this is my first website writen by third year cs student--->
+	
+
+<form action="index.php" method="post" enctype="multipart/form-data">
+
+    <div>
+        <label for="fname"> firs tname</label>
+    <input type="text" name="firstname" placeholder="beki" minlength="4"maxlength="100">
+    </div>
+    <br>
+  <div>
+    <label for="lname">last name</label>
+    <input type="text" name="last name" placeholder="ayi" minlength="3" maxlength="100">
+  </div>
+  <br>
+  <div>
+    <label for="password">password</label>
+    <input type="text" id="nuber" placeholder="1001"minlength="2" maxlength="10">
+
+  </div>
+  <br>
+  <div>
+    <label for="title">email</label>
+    <input type="text" placeholder="bekamayela@12gmail.com" >
+  </div>
+  <br>
+  <div>
+    <input type="submit">
+  </div>
+  <br>
+
+  <div>
+    <input type="reset">
+  </div>
+</form>
+  <hr>
+
+  <h3>HTML audio </h3>
+  <p>HTML<strong> audio tag is used to define sounds such as music and other audio clips</strong>.
+    <br> Currently there are three supported file format for HTML 5 audio tag.</p>
+  <audio controls autoplay muted loop>  
+    <source src="gajoo.m4a" type="audio/mpeg">  
+  Your browser does not support the html audio tag.  
+  </audio>
+<hr>
+<h3>HTMLvideo </h3>
+<p> <em>HTML 5 supports tag also</em>. The HTML video tag is used for streaming video files such as a movie clip, song clip on the web page</p>
+
+<video controls>  
+  <source src="" type="video/ogg">  
+ Your browser does not support the html video tag.  
+</video>  
+
+</body>
+</html>
